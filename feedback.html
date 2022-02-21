@@ -15,32 +15,416 @@
 	<meta property="og:title" content="The Storey Players">
 	<meta property="og:description"
 		content="The Storey Players is a charitable organisation whose principal mission is empowering disadvantaged kids through drama workshops and storytelling activities to strengthen their self-confidence and increase their literacy skills.">
-	<meta property="og:image" content="https://thestoreyplayers.org/images/logo.png">
+	<meta property="og:image" content="https://thestoreyplayers.org/images/logo-long.png">
 
 	<meta property="twitter:card" content="summary_large_image">
 	<meta property="twitter:url" content="https://thestoreyplayers.org">
 	<meta property="twitter:title" content="The Storey Players">
 	<meta property="twitter:description"
 		content="The Storey Players is a charitable organisation whose principal mission is empowering disadvantaged kids through drama workshops and storytelling activities to strengthen their self-confidence and increase their literacy skills.">
-	<meta property="twitter:image" content="https://thestoreyplayers.org/images/logo.png">
+	<meta property="twitter:image" content="https://thestoreyplayers.org/images/logo-long.png">
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
-	<link crossorigin rel="preload" href="d6394565-804f-4a26-88d1-4d982c7eed9e.woff2" as="font">
+	<link crossorigin rel="preload" href="special.woff2" as="font">
 
 	<link rel="icon" href="images/favicon.ico" />
 	<link rel="apple-touch-icon" sizes="180x180" href="images/favicon-180w.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16w.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32w.png">
-	<link rel="icon" type="image/png" sizes="48x48" href="/favicon-48w.png">
-	<link rel="icon" type="image/png" sizes="64x64" href="/favicon-64w.png">
-	<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192w.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16w.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32w.png">
+	<link rel="icon" type="image/png" sizes="48x48" href="images/favicon-48w.png">
+	<link rel="icon" type="image/png" sizes="64x64" href="images/favicon-64w.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="images/favicon-192w.png">
 
-	<link rel="stylesheet" href="index.css">
-	<script src="index.js" type="text/javascript"></script>
+    <script>
+
+		document.addEventListener("DOMContentLoaded", function(event) { 
+		
+			const hamburger = document.querySelector(".hamburger");
+			const navMenu = document.querySelector(".nav-menu");
+            const navShutter = document.querySelector( ".nav-shutter" );
+
+            navShutter.addEventListener( 'touchmove', function(e){e.preventDefault()});
+            navMenu.addEventListener( 'touchmove', function(e){e.preventDefault()});
+
+            hamburger.addEventListener("click", mobileMenu);
+            navMenu.addEventListener("click", mobileMenuOff);
+
+            function mobileMenu() {
+                window.scrollTo( 0, 0 );
+                hamburger.classList.toggle("active");
+                navMenu.classList.toggle("active");
+                navShutter.classList.toggle( "active" );
+
+            }
+
+            function mobileMenuOff() {
+                hamburger.classList.remove("active");
+                navMenu.classList.remove("active");
+                navShutter.classList.remove( "active" );
+
+            }
+		
+		});
+		
+	</script>
+		
+
+	<style>
+@font-face {font-family: "Linotype Feltpen W02 Medium";
+    src: url("special.woff2");
+    font-display: swap;  
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Source Sans Pro', sans-serif;
+
+}
+
+header.st-header-about {
+    background-color: #ff6c2c;
+}
+
+body {
+    min-width: 300px;
+}
+
+.st-banner {
+    margin: 20px;
+}
+
+.st-logo {
+    margin-left: 1.2rem;
+    margin-bottom: 1.5rem;
+    margin-top: 0.7rem;
+    width: 90%;
+    max-width: 1500px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 0.5rem;
+    padding-left: 0rem;
+    padding-right: 2rem;
+    padding-bottom: 0px;
+}
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 20;
+}
+
+.nav-item {
+    margin-left: 5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.nav-link{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #fff;
+}
+
+.nav-link:hover{
+    color: #fff;
+}
+
+.nav-logo {
+    font-size: 2.1rem;
+    font-weight: 500;
+    width: 40%;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+.st-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+}
+
+.st-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+}
+
+.st-special-font {
+    font-family: 'Linotype Feltpen W02 Medium', "Arial", "Tahoma";
+}
+
+.st-container-centered {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.band2 {
+  position: relative;
+  display: block;
+  margin: 40px;
+  background: white;
+  border-top: 2px solid grey;
+  border-left: 2px solid grey;
+}
+
+.band3 {
+  position: relative;
+  display: inherit;
+  margin: 10px;
+  height: 100%;
+}
+
+.st-relative {
+    position: relative;
+}
+
+.st-full-width {
+    width: 100%;
+    height: auto;
+    z-index: 10;
+}
+
+
+.st-spacer {
+    clear: both;
+    height: 2rem;
+}
+
+
+.st-responsive-panel {
+    padding: 3rem;
+    font-size: 1.6rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.st-inner-text {
+    background-color: white;
+    color: black;
+    padding: 2rem;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.st-align-center {
+    text-align: center;
+}
+
+.st-bg-navy {
+    background-color: #2a79c4;
+}
+
+.st-bg-orange {
+    background-color: #ff6c2c;
+}
+
+.st-navy-font {
+    color: #01202e;
+}
+
+.st-orange-font {
+    color: #ff6c2c;
+}
+
+.st-max-1200 {
+    max-width: 1200px;
+}
+
+.st-align-right {
+    text-align: right;
+}
+
+@media only screen and (min-width: 601px) {
+
+	.nav-item {
+		margin-left: 2rem;
+	}
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    .navbar {
+        padding-right: 1rem;
+		z-index: 2;
+    }
+
+	.nav-shutter {
+		display: none;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 100%;
+		bottom: 100%;
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+		z-index: 1;
+
+		background-color: rgba( 50, 50, 50, 0.5 );
+
+	}
+
+	.nav-shutter.active {
+		display: block;
+
+	}
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+		top: 40px;
+
+        flex-direction: column;
+        background-color: #ff6c2c;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        padding-inline-start: 0px;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+        margin-top: 0.2rem;
+        padding: 0px;
+
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+    }
+
+    .nav-link {
+        margin: 2.5rem 0;
+        margin: 0;
+        padding: 2rem 0;
+        display: block;
+    }
+
+    .nav-link{
+        color: #fff;
+        width: 100%;
+        height: 100%;
+        font-size: 1.5rem;
+    }
+    
+    .hamburger {
+        display: block;
+        cursor: pointer;
+		z-index: 4;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+       
+    .st-spacer {
+        height: 1rem;
+    }
+
+    .st-video-caption {
+        padding: 1rem;
+        font-size: 0.8rem;
+    }
+
+    .st-inner-text {
+        padding: 1rem;    
+    }
+
+    .st-responsive-panel {
+        padding: 0.2rem;
+        font-size: 1rem;
+    }
+    
+    .st-responsive-panel .band2 {
+        width: 100vw;
+        margin: 0px;
+    }
+
+    .st-caption {
+        font-size: 1rem;
+    }
+    
+    .st-title {
+        font-size: 1.2rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .st-quote-caption {
+        font-size: 1.2rem;
+    }
+
+    .st-quote-sub-caption {
+        font-size: 1.1rem;
+    }
+    
+    .st-quote-sub-caption-orange {
+        font-size: 1.1rem;
+    }
+    
+
+}
+
+
+
+	</style>
 
 	<title>Feedback | The Storey Players</title>
+
 
 </head>
 
@@ -49,6 +433,8 @@
 	<header class="st-header-about">
 
 		<div class="st-header-banner">
+
+            <div class="nav-shutter"></div>
 
             <nav id="st-nav" class="navbar st-nojs">
                 
@@ -60,6 +446,9 @@
 					</li>
 					<li class="nav-item">
 						<a href="about.html" class="nav-link">About</a>
+					</li>
+					<li class="nav-item">
+						<a href="index.html#tour" class="nav-link">2022 Tour</a>
 					</li>
 					<li class="nav-item">
 						<a href="productions.html" class="nav-link">Productions</a>
@@ -87,21 +476,21 @@
 		<div class="band2">
 			<div class="band3">
 
-                <div class="st-inner-text st-regular-font">
+                <div class="st-inner-text">
 
-                    <p class="st-special-font st-title">Feedback..</p>
+                    <h1 class="st-special-font st-title">Feedback..</h1>
 
-                    <p class="st-regular-font">Letters of recommendation and quotes from the people we've worked with. </p>
+                    <p>Letters of recommendation and quotes from the people we've worked with. </p>
 
                 </div>
 				
                 <div class="st-container-centered">
 
                     <picture>
-                        <source media="(max-width: 400px)" srcset="images/group4-300w.jpg">
-                        <source media="(max-width: 600px)" srcset="images/group4-600w.jpg">
-                        <source media="(max-width: 900px)" srcset="images/group4-900w.jpg">
-                        <img class="st-full-width" src="images/group4-1200w.jpg" width="1200" height="675" alt="Kids participating in a Storey Players project"/>
+                        <source media="(max-width: 400px)" srcset="images/group4-b-300w.jpg">
+                        <source media="(max-width: 600px)" srcset="images/group4-b-600w.jpg">
+                        <source media="(max-width: 900px)" srcset="images/group4-b-900w.jpg">
+                        <img class="st-full-width" src="images/group4-b-1200w.jpg" width="1200" height="675" alt="Kids participating in a Storey Players project"/>
                     </picture>
 
 				</div>
@@ -117,7 +506,7 @@
 
                 <div class="st-inner-text">
 
-                    <div class="st-quote-container st-quote-container-left">
+                    <div class="st-quote-container st-quote-container-left st-special-font">
 
                         <p class="st-navy-font">❝My name is Don Rowlands OAM, I am an Elder of the Wangkangurru Yarlyulandi people of the Munga-Thirri (Simpson Desert) and Diamantina region. I worked with The Storey Players on the production of ‘Rainbow Serpent and the Story of Creation’ performed at the Big Red Bash in July 2018.</p>
 
@@ -125,7 +514,7 @@
 
                     </div>
 
-					<p class="st-quote-caption">Don Rowlands OAM</p>
+					<p class="st-quote-caption st-special-font">Don Rowlands OAM</p>
 
 				</div>
 
@@ -152,7 +541,7 @@
 
 					</noscript>
 
-					<div class="st-video-caption st-regular-font st-caption">Listen to Zoe Hall, former Principal at Dajarra State School, talk about The Storey Players and how the kids responded to their work</div>
+					<div class="st-video-caption st-caption">Listen to Zoe Hall, former Principal at Dajarra State School, talk about The Storey Players and how the kids responded to their work</div>
 				
 					
 				</div>
@@ -172,7 +561,7 @@
 
                 <div class="st-inner-text">
 
-                    <div class="st-quote-container st-quote-container-right">
+                    <div class="st-quote-container st-quote-container-right st-special-font">
 
                         <p>❝Concerning Simon and Tina Storey and their contribution to Aboriginal Education in the Far West. Simon and Tina interact well with the students and provide opportunities for them to learn through drama and know how to motivate their students to learn and give their best at these performances.</p>
 
@@ -180,7 +569,7 @@
 
                     </div>
 
-					<p class="st-quote-caption st-align-right">Peter and Christine Coates - Mobile School Chaplains</p>
+					<p class="st-quote-caption st-align-right st-special-font">Peter and Christine Coates - Mobile School Chaplains</p>
 
                 </div>
 
@@ -197,7 +586,7 @@
 
                 <div class="st-inner-text">
 
-                    <div class="st-quote-container st-quote-container-left">
+                    <div class="st-quote-container st-quote-container-left st-special-font">
 
                         <p>❝Their methods proved highly effective in building the confidence of the more reserved students and prepared them to stand in front of an audience. Building “Resilience” in students is a core focus of our school, which the Storey Players incorporated into their program.</p>
 
@@ -211,7 +600,7 @@
 
                     </div>
 
-					<p class="st-quote-caption">Miebaka Dede - Principal of Dajarra State School</p>
+					<p class="st-quote-caption st-special-font">Miebaka Dede - Principal of Dajarra State School</p>
 
                 </div>
 
@@ -236,34 +625,66 @@
 
                 <div class="st-inner-text">
 
-                    <p class="st-special-font st-title">What the Kids Said..</p>
+                    <h2 class="st-special-font st-title">What the Kids Said..</h2>
 
-                    <p class="st-quote-caption">What did you like best about working on the project?</p>
+					<div class="st-container-centered st-kids-feedback">
+						<picture>
+							<source media="(max-width: 300px)" srcset="images/feedback-1-300w.jpg">
+							<source media="(max-width: 600px)" srcset="images/feedback-1-600w.jpg">
+							<img src="images/feedback-1-900w.jpg">
+						</picture>
+					</div>
+					
+					<div class="st-container-centered st-kids-feedback">
+						<picture>
+							<source media="(max-width: 300px)" srcset="images/feedback-2-300w.jpg">
+							<source media="(max-width: 600px)" srcset="images/feedback-2-600w.jpg">
+							<img src="images/feedback-2-900w.jpg">
+						</picture>
+					</div>
 
-                    <div class="st-quote-container st-quote-container-left">
+					<div class="st-container-centered st-kids-feedback">
+						<picture>
+							<source media="(max-width: 300px)" srcset="images/feedback-3-300w.jpg">
+							<source media="(max-width: 600px)" srcset="images/feedback-3-600w.jpg">
+							<img src="images/feedback-3-900w.jpg">
+						</picture>
+					</div>
 
-                        <p>❝Having a go.❞</p>
-                        <p>❝Learning about our Dreamings.❞</p>
-                        <p>❝I liked the filming.❞</p>
-                        <p>❝Making the mask.❞</p>
-                        <p>❝I think it was great doing our totems.❞</p>
-                        <p>❝All of it!❞</p>
+					<div class="st-container-centered st-kids-feedback">
+						<picture>
+							<source media="(max-width: 300px)" srcset="images/feedback-4-300w.jpg">
+							<source media="(max-width: 600px)" srcset="images/feedback-4-600w.jpg">
+							<img src="images/feedback-4-900w.jpg">
+						</picture>
+					</div>
 
-                    </div>
+					<div class="st-container-centered st-kids-feedback">
+						<picture>
+							<source media="(max-width: 300px)" srcset="images/feedback-5-300w.jpg">
+							<source media="(max-width: 600px)" srcset="images/feedback-5-600w.jpg">
+							<img src="images/feedback-5-900w.jpg">
+						</picture>
+					</div>
 
-                    <p class="st-quote-caption st-align-right">What is the most important thing you learned from this project?</p>
+					<div class="st-container-centered st-kids-feedback">
+						<picture>
+							<source media="(max-width: 300px)" srcset="images/feedback-6-300w.jpg">
+							<source media="(max-width: 600px)" srcset="images/feedback-6-600w.jpg">
+							<img src="images/feedback-6-900w.jpg">
+						</picture>
+					</div>
 
-                    <div class="st-quote-container st-quote-container-right st-align-right">
+					<div class="st-container-centered st-kids-feedback">
+			
+						<picture>
+							<source media="(max-width: 300px)" srcset="images/feedback-7-300w.jpg">
+							<source media="(max-width: 600px)" srcset="images/feedback-7-600w.jpg">
+							<img src="images/feedback-7-900w.jpg">
+						</picture>
 
-                        <p>❝Learning not to be scared.❞</p>
-                        <p>❝Being more confident.❞</p>
-                        <p>❝Learning about my totem.❞</p>
-                        <p>❝To be confident and have no shame.❞</p>
-                        <p>❝How to stand in front of everybody.❞</p>
-                        <p>❝When you do stuff it gets you out of your comfort zone.❞</p>
-
-                    </div>
-
+					</div>
+				
                 </div>
 
             </div>
@@ -279,22 +700,16 @@
 			<img src="images/charity.png" width="100" height="100" alt="Registered charity logo"/>
 
 			<div>
-				<div>The Storey Players ABN 30483370257 - also known as 'TSP Theatre Inc'</div>
+				<div>TSP Theatre Inc is a registered charity. ABN: 30483370257 – trading as The Storey Players</div>
 			</div>
 
 		</div>
 
 		<div class="st-footer-sponsor">
 			
-			<p>Vehicle maintenance kindly supplied by <a href="http://www.uptechoffroadcentre.com.au/">Uptech Offroad Centre, Monbulk Victoria</a></p>
-
-			<p>The <a href="http:/galvanisedtrailerco.com.au/">Galvanised Trailer Company</a> provides offroad trailers for our rough and tumble tours.</p>
-
-			<p>The <a href="https:/swag.com.au/">Jolly Swagman</a> has supported us with discount swags.</p>
-
+            <p>Director - Simon Storey - 0488 722 568</a></p>
+			
 			<p>Special thanks to the Sheahan Family without whose caravan our organisation would never have begun.</p>
-
-			<p>Thanks to <a href="https://www.diamantina.qld.gov.au/">Diamantina Shire Council</a></p>
 
 		</div>
 
@@ -302,6 +717,7 @@
 
 		<div class="st-footer-socials">
 
+			<a href="mailto:contact@thestoreyplayers.org"><img src="images/email.png" width="40" height="40" alt="Email logo"/></a>
 			<a href="https://www.facebook.com/thestoreyplayers"><img src="images/fb.png" width="40" height="40" alt="Facebook logo"/></a>
 			<a href="https://www.instagram.com/thestoreyplayers/"><img src="images/insta.png" width="40" height="40" alt="Instagram logo"/></a>
 			
@@ -314,6 +730,61 @@
         </div>
 
 	</footer>
+
+	<style>
+
+
+.st-kids-feedback {
+    
+    width: 100%;
+
+}
+
+.st-kids-feedback img {
+
+    width: 100%;
+    max-width: 900px;
+
+}
+
+.st-kids-feedback:nth-child(even) img {
+    border-bottom: 4px dotted #2a79c4;
+}
+
+.st-kids-feedback:nth-child(odd) img {
+    border-bottom: 4px dotted #ff6c2c;
+}
+
+
+.st-quote-container-left {
+    padding-left: 2rem;
+    border-left-style: solid;
+    border-left-width: 0.5rem;
+    border-left-color: #ff6c2c;
+}
+
+.st-quote-container-left-navy {
+    padding-left: 2rem;
+    border-left-style: solid;
+    border-left-width: 0.5rem;
+    border-left-color: #01202e;
+}
+
+.st-quote-container-right {
+    padding-right: 2rem;
+    border-right-style: solid;
+    border-right-width: 0.5rem;
+    border-right-color: #ff6c2c;
+}
+
+.st-quote-container {
+    width: 100%;
+    color: #01202e;
+}
+
+	</style>
+
+	<link rel="stylesheet" href="index.css">
 
 </body>
 

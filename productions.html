@@ -15,14 +15,14 @@
 	<meta property="og:title" content="The Storey Players">
 	<meta property="og:description"
 		content="The Storey Players is a charitable organisation whose principal mission is empowering disadvantaged kids through drama workshops and storytelling activities to strengthen their self-confidence and increase their literacy skills.">
-	<meta property="og:image" content="https://thestoreyplayers.org/images/logo.png">
+	<meta property="og:image" content="https://thestoreyplayers.org/images/logo-long.png">
 
 	<meta property="twitter:card" content="summary_large_image">
 	<meta property="twitter:url" content="https://thestoreyplayers.org">
 	<meta property="twitter:title" content="The Storey Players">
 	<meta property="twitter:description"
 		content="The Storey Players is a charitable organisation whose principal mission is empowering disadvantaged kids through drama workshops and storytelling activities to strengthen their self-confidence and increase their literacy skills.">
-	<meta property="twitter:image" content="https://thestoreyplayers.org/images/logo.png">
+	<meta property="twitter:image" content="https://thestoreyplayers.org/images/logo-long.png">
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,14 +31,435 @@
 
 	<link rel="icon" href="images/favicon.ico" />
 	<link rel="apple-touch-icon" sizes="180x180" href="images/favicon-180w.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16w.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32w.png">
-	<link rel="icon" type="image/png" sizes="48x48" href="/favicon-48w.png">
-	<link rel="icon" type="image/png" sizes="64x64" href="/favicon-64w.png">
-	<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192w.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16w.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32w.png">
+	<link rel="icon" type="image/png" sizes="48x48" href="images/favicon-48w.png">
+	<link rel="icon" type="image/png" sizes="64x64" href="images/favicon-64w.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="images/favicon-192w.png">
 
-	<link rel="stylesheet" href="index.css">
-	<script src="index.js" type="text/javascript"></script>
+	<script>
+
+		document.addEventListener("DOMContentLoaded", function(event) { 
+		
+			const hamburger = document.querySelector(".hamburger");
+			const navMenu = document.querySelector(".nav-menu");
+		
+			hamburger.addEventListener("click", mobileMenu);
+			navMenu.addEventListener("click", mobileMenuOff);
+            const navShutter = document.querySelector( ".nav-shutter" );
+
+            navShutter.addEventListener( 'touchmove', function(e){e.preventDefault()});
+            navMenu.addEventListener( 'touchmove', function(e){e.preventDefault()});
+
+            hamburger.addEventListener("click", mobileMenu);
+            navMenu.addEventListener("click", mobileMenuOff);
+
+            function mobileMenu() {
+                window.scrollTo( 0, 0 );
+                hamburger.classList.toggle("active");
+                navMenu.classList.toggle("active");
+                navShutter.classList.toggle( "active" );
+
+            }
+
+            function mobileMenuOff() {
+                hamburger.classList.remove("active");
+                navMenu.classList.remove("active");
+                navShutter.classList.remove( "active" );
+
+            }
+		
+		});
+		
+	</script>
+		
+
+	<style>
+@font-face {font-family: "Linotype Feltpen W02 Medium";
+    src: url("special.woff2");
+    font-display: swap;  
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Source Sans Pro', sans-serif;
+
+}
+
+header.st-header-about {
+    background-color: #ff6c2c;
+}
+
+body {
+    min-width: 300px;
+}
+
+.st-banner {
+    margin: 20px;
+}
+
+.st-logo {
+    margin-left: 1.2rem;
+    margin-bottom: 1.5rem;
+    margin-top: 0.7rem;
+    width: 90%;
+    max-width: 1500px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 0.5rem;
+    padding-left: 0rem;
+    padding-right: 2rem;
+    padding-bottom: 0px;
+}
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 20;
+}
+
+.nav-item {
+    margin-left: 5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.nav-link{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #fff;
+}
+
+.nav-link:hover{
+    color: #fff;
+}
+
+.nav-logo {
+    font-size: 2.1rem;
+    font-weight: 500;
+    width: 40%;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+.st-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+}
+
+.st-special-font {
+    font-family: 'Linotype Feltpen W02 Medium', "Arial", "Tahoma";
+}
+
+.st-container-centered {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.band2 {
+  position: relative;
+  display: block;
+  margin: 40px;
+  background: white;
+  border-top: 2px solid grey;
+  border-left: 2px solid grey;
+}
+
+.band3 {
+  position: relative;
+  display: inherit;
+  margin: 10px;
+  height: 100%;
+}
+
+.st-relative {
+    position: relative;
+}
+
+.st-full-width {
+    width: 100%;
+    height: auto;
+    z-index: 10;
+}
+
+
+.st-spacer {
+    clear: both;
+    height: 2rem;
+}
+
+.st-responsive-panel {
+    padding: 3rem;
+    font-size: 1.6rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.st-inner-text {
+    background-color: white;
+    color: black;
+    padding: 2rem;
+    width: 100%;
+    max-width: 1200px;
+}
+
+ul.st-bullet {
+    margin-left: 1rem;
+}
+
+.st-bullet li {
+    margin-bottom: 0.8rem;
+    text-align: center;
+}
+
+.st-align-center {
+    text-align: center;
+}
+
+@media only screen and (min-width: 601px) {
+
+	.nav-item {
+		margin-left: 2rem;
+	}
+
+}
+
+@media only screen and (max-width: 768px) {
+	
+	.navbar {
+        padding-right: 1rem;
+		z-index: 2;
+    }
+
+	.nav-shutter {
+		display: none;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 100%;
+		bottom: 100%;
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+		z-index: 1;
+
+		background-color: rgba( 50, 50, 50, 0.5 );
+
+	}
+
+	.nav-shutter.active {
+		display: block;
+
+	}
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+		top: 40px;
+
+        flex-direction: column;
+        background-color: #ff6c2c;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        padding-inline-start: 0px;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+        margin-top: 0.2rem;
+        padding: 0px;
+
+    }
+
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+    }
+
+    .nav-link {
+        margin: 2.5rem 0;
+        margin: 0;
+        padding: 2rem 0;
+        display: block;
+    }
+
+    .nav-link{
+        color: #fff;
+        width: 100%;
+        height: 100%;
+        font-size: 1.5rem;
+    }
+    
+    .hamburger {
+        display: block;
+        cursor: pointer;
+		z-index: 4;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+   
+    .st-spacer {
+        height: 1rem;
+    }
+
+    .st-video-caption {
+        padding: 1rem;
+        font-size: 0.8rem;
+    }
+
+    .st-inner-text {
+        padding: 1rem;    
+    }
+
+    .st-responsive-panel {
+        padding: 0.2rem;
+        font-size: 1rem;
+    }
+    
+    .st-responsive-panel .band2 {
+        width: 100vw;
+        margin: 0px;
+    }
+
+    .st-caption {
+        font-size: 1rem;
+    }
+    
+    .st-title {
+        font-size: 1.2rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .st-quote-caption {
+        font-size: 1.2rem;
+    }
+
+    .st-quote-sub-caption {
+        font-size: 1.1rem;
+    }
+    
+    .st-quote-sub-caption-orange {
+        font-size: 1.1rem;
+    }
+    
+}
+
+@keyframes st-come-in {
+    to { transform: translateY(0) rotate( 0deg ); }
+}
+.st-come-in {
+    transform: translateY(100vh);
+    animation: st-come-in 0.8s ease forwards;
+}
+
+.st-come-in:nth-child(1) {
+    animation-delay: 0.6s; 
+}
+
+.st-come-in:nth-child(2) {
+    animation-delay: 0.8s; 
+}
+
+.st-come-in:nth-child(3) {
+    animation-delay: 1.0s; 
+}
+
+.st-come-in:nth-child(4) {
+    animation-delay: 1.2s; 
+}
+
+.st-bg-navy {
+    background-color: #2a79c4;
+}
+
+.st-bg-orange {
+    background-color: #ff6c2c;
+}
+
+.st-navy-font {
+    color: #01202e;
+}
+
+.st-orange-font {
+    color: #ff6c2c;
+}
+
+.st-max-1200 {
+    max-width: 1200px;
+}
+
+@media only screen and (max-width: 768px) {
+
+    ul.st-bullet {
+        margin-left: 0px;
+        padding: 0px;
+    }
+
+}
+
+@media only screen and (max-width: 550px) {
+
+    .st-bullet {
+        font-size: 1.0rem;
+    }
+
+}
+
+	</style>
 
 	<title>Productions | The Storey Players</title>
 
@@ -50,6 +471,8 @@
 
 		<div class="st-header-banner">
 
+            <div class="nav-shutter"></div>
+
             <nav id="st-nav" class="navbar st-nojs">
                 
                 <div></div>
@@ -60,6 +483,9 @@
 					</li>
 					<li class="nav-item">
 						<a href="about.html" class="nav-link">About</a>
+					</li>
+					<li class="nav-item">
+						<a href="index.html#tour" class="nav-link">2022 Tour</a>
 					</li>
 					<li class="nav-item">
 						<a href="feedback.html" class="nav-link">Feedback</a>
@@ -89,23 +515,23 @@
 
 				<div class="st-container-centered">
 
-					<div class="st-inner-text st-regular-font st-max-1200">
+					<div class="st-inner-text">
 
-                        <p class="st-special-font st-title">Our Productions and Their Impact..</p>
+                        <h1 class="st-special-font st-title">Our Productions and Their Impact..</h1>
 
-                        <p class="st-regular-font">During the past three years we have visited more than 10 remote communities and townships and facilitated drama workshops with over 300 disadvantaged children.</p>
+                        <p>During the past three years we have visited more than 10 remote communities and townships and facilitated drama workshops with over 300 disadvantaged children.</p>
 
-                        <p class="st-regular-font">Drama workshops bring proven benefits to children including:</p>
+                        <p>Drama workshops bring proven benefits to children including:</p>
 
                         <ul class="st-special-font st-bullet">
 
-                            <li class="come-in">Encouraging kids to cooperate.</li>
+                            <li class="st-come-in">Encouraging kids to cooperate.</li>
 
-                            <li class="come-in">Strengthening self-confidence</li>
+                            <li class="st-come-in">Strengthening self-confidence</li>
 
-                            <li class="come-in">Improving literacy levels</li>
+                            <li class="st-come-in">Improving literacy levels</li>
 
-                            <li class="come-in">Developing communication skills</li>
+                            <li class="st-come-in">Developing communication skills</li>
 
                         </ul>
 
@@ -119,7 +545,7 @@
 		
 							</noscript>
 		
-							<div class="st-video-caption st-regular-font">Watch this seven-minute video which showcases our method and some results from our recent project in Dajarra</div>
+							<div class="st-video-caption">Watch this seven-minute video which showcases our method and some results from our recent project in Dajarra</div>
 			
 						</div>
 		
@@ -154,19 +580,19 @@
                 </picture>
 
 
-                <div class="st-inner-text st-regular-font st-max-1200">
+                <div class="st-inner-text">
 
-                    <p class="st-quote-caption st-special-font">Alpurrurulam Community School</p>
+                    <h2 class="st-quote-caption st-special-font">Alpurrurulam Community School</h2>
 
                     <p class="st-quote-sub-caption st-special-font">Our first visit to this beautiful community!</p>
 
-                    <p class="st-regular-font">We thoroughly enjoyed our two weeks in Alpurrurulam working with the Transition - Year 9 children at the school.</p>
+                    <p>We thoroughly enjoyed our two weeks in Alpurrurulam working with the Transition - Year 9 children at the school.</p>
 
-                    <p class="st-regular-font">The children were open and very excited about the games we played, and most of them joined in with stacks of enthusiasm. As in every school, however, there were also some who were not so keen about taking such risks, but by choosing our games carefully and taking it step-by-step we gradually gained their trust.</p>
+                    <p>The children were open and very excited about the games we played, and most of them joined in with stacks of enthusiasm. As in every school, however, there were also some who were not so keen about taking such risks, but by choosing our games carefully and taking it step-by-step we gradually gained their trust.</p>
 
-                    <p class="st-regular-font">The final production, which was a collaboration with all the students, was presented to the parents who came on literacy day to much laughter and applause. Everyone had a great time and we especially enjoyed watching everyone's reactions!</p>
+                    <p>The final production, which was a collaboration with all the students, was presented to the parents who came on literacy day to much laughter and applause. Everyone had a great time and we especially enjoyed watching everyone's reactions!</p>
 
-                    <p class="st-regular-font">The principal and staff have invited us back next year for a month to work in the school and facilitate workshops outside school hours for kids who want to learn more about drama.</p>
+                    <p>The principal and staff have invited us back next year for a month to work in the school and facilitate workshops outside school hours for kids who want to learn more about drama.</p>
 
                 </div>
 
@@ -187,15 +613,15 @@
                     <img class="st-full-width st-max-1200" src="images/emerging-1200w.jpg" width="1200" height="1200" alt="Costume designs"/>
                 </picture>
 
-                <div class="st-inner-text st-regular-font st-max-1200">
+                <div class="st-inner-text">
 
-                    <p class="st-quote-caption st-special-font">Emerging Landscapes - Melbourne Indigenous Transition School (MITS)</p>
+                    <h2 class="st-quote-caption st-special-font">Emerging Landscapes - Melbourne Indigenous Transition School (MITS)</h2>
 
                     <p class="st-quote-sub-caption st-special-font">A partnership with Melbourne Indigenous Transition School and Independent Schools of Victoria.</p>
 
-                    <p class="st-regular-font">The Storey Players facilitated drama and mask making workshops to explore the students transition from their remote communities to Melbourne at MITS boarding school. </p>
+                    <p>The Storey Players facilitated drama and mask making workshops to explore the students transition from their remote communities to Melbourne at MITS boarding school. </p>
 
-                    <p class="st-regular-font">As a part of the Independent Schools of Victoria biennial Arts Learning Festival, Emerging Landscapes was filmed and shown at Federation Square on the big screen.</p>
+                    <p>As a part of the Independent Schools of Victoria biennial Arts Learning Festival, Emerging Landscapes was filmed and shown at Federation Square on the big screen.</p>
 
                     <div class="st-container-centered">
                         <iframe class="st-video-container" src="https://player.vimeo.com/video/340367843?h=aa7b28b41d&amp;app_id=122963" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" title="The Storey Players"></iframe>
@@ -227,21 +653,21 @@
                 </picture>
 
 
-                <div class="st-inner-text st-regular-font st-max-1200">
+                <div class="st-inner-text">
 
-                    <p class="st-quote-caption st-special-font">Rainbow Serpent and the Story of Creation</p>
+                    <h2 class="st-quote-caption st-special-font">Rainbow Serpent and the Story of Creation</h2>
 
                     <p class="st-quote-sub-caption st-special-font">A Dreamtime-style story created and performed with permission of Elders from the Wangkangurru Yarlyulandi nation</p>
 
-                    <p class="st-regular-font">It was at the Big Red Bash Festival in 2017 that we made the decision to create a performance combining English and Indigenous language to highlight the Indigenous aspect of the Munga-Thirri (Simpson Desert) and Diamantina region.</p>
+                    <p>It was at the Big Red Bash Festival in 2017 that we made the decision to create a performance combining English and Indigenous language to highlight the Indigenous aspect of the Munga-Thirri (Simpson Desert) and Diamantina region.</p>
 
-                    <p class="st-regular-font">We wrote a script in the style of a Dreamtime story which was approved by the local Wangkangurru Yarluyandi Elders. The ‘Rainbow Serpent and the Story of Creation’ production was  performed at sunset during the event in front of the 9000+ crowd. This festival takes place at the edge of the Simpson Desert and Big Red is the 40 metre sand-dune that acts as the guardian to this Ancient Landscape.</p>
+                    <p>We wrote a script in the style of a Dreamtime story which was approved by the local Wangkangurru Yarluyandi Elders. The ‘Rainbow Serpent and the Story of Creation’ production was  performed at sunset during the event in front of the 9000+ crowd. This festival takes place at the edge of the Simpson Desert and Big Red is the 40 metre sand-dune that acts as the guardian to this Ancient Landscape.</p>
 
-                    <p class="st-regular-font">Arriving in early July, we facilitated drama workshops with the local and visiting children and made a giant Rainbow Serpent to appear on the top Big Red and then slither down to the audience. It was painted on the tennis court at Birdsville with help from some of the cast members and the local NAIDOC community.</p>
+                    <p>Arriving in early July, we facilitated drama workshops with the local and visiting children and made a giant Rainbow Serpent to appear on the top Big Red and then slither down to the audience. It was painted on the tennis court at Birdsville with help from some of the cast members and the local NAIDOC community.</p>
 
-                    <p class="st-regular-font">Wayne Kite and Paula Faulkner, from Ngalan Productions, provided the music with didgeridoo and clapsticks to accompany the Serpent and Animals during the show. Don Rowlands (Indigenous Elder) read parts of the script in Wangkangurru Yarluyandi language, and Lyn Rowlands and Paula joined in for the chorus when the Rainbow Serpent gave the Man and Woman certain rules for looking after her creation.</p>
+                    <p>Wayne Kite and Paula Faulkner, from Ngalan Productions, provided the music with didgeridoo and clapsticks to accompany the Serpent and Animals during the show. Don Rowlands (Indigenous Elder) read parts of the script in Wangkangurru Yarluyandi language, and Lyn Rowlands and Paula joined in for the chorus when the Rainbow Serpent gave the Man and Woman certain rules for looking after her creation.</p>
 
-                    <p class="st-regular-font">Working with the Diamantina kids, the NAIDOC community and the Diamantina Council was a rich and rewarding experience for The Storey Players and deepens their commitment to further develop similar shows for new audiences around Australia.</p>
+                    <p>Working with the Diamantina kids, the NAIDOC community and the Diamantina Council was a rich and rewarding experience for The Storey Players and deepens their commitment to further develop similar shows for new audiences around Australia.</p>
 
 
                     <div class="st-container-centered">
@@ -274,23 +700,23 @@
                     <img class="st-full-width" src="images/tiddalik-1200w.jpg" width="900" height="506" alt="Participants of the Tiddalik project"/>
                 </picture>
 
-                <div class="st-inner-text st-regular-font st-max-1200">
+                <div class="st-inner-text">
 
-                    <p class="st-quote-caption st-special-font">Tiddalik the Frog - Community Theatre at Dajarra</p>
+                    <h2 class="st-quote-caption st-special-font">Tiddalik the Frog - Community Theatre at Dajarra</h2>
 
                     <p class="st-quote-sub-caption st-special-font">Dajarra kids celebrate a special story</p>
 
-                    <p class="st-regular-font">In 2018 we created ‘Tiddalik the Frog’ with the kids and performed it for the Dajarra community. The whole school was involved in the show and it was a huge step for the children as most of them had never performed in public before. There were, however, two girls, sisters, who did not participate in the workshops, did not smile or speak to us throughout the project and who simply disappeared on the day of the show.</p>
+                    <p>In 2018 we created ‘Tiddalik the Frog’ with the kids and performed it for the Dajarra community. The whole school was involved in the show and it was a huge step for the children as most of them had never performed in public before. There were, however, two girls, sisters, who did not participate in the workshops, did not smile or speak to us throughout the project and who simply disappeared on the day of the show.</p>
 
-                    <p class="st-regular-font">This year we re-created ‘Tiddalik the Frog’ and arranged a public performance at St Kieren’s Catholic School, who generously agreed to host our group, in front of 50 children. It was a wonderful moment for us when we arrived in town and the kids ran over to the car and enthusiastically greeted us, asking “How long are you staying? Are we doing drama again? What games are we going to play”? Sam, our son, was quickly accepted into the group and began playing basketball, while our daughter took on an older sister role with many of the younger kids.</p>
+                    <p>This year we re-created ‘Tiddalik the Frog’ and arranged a public performance at St Kieren’s Catholic School, who generously agreed to host our group, in front of 50 children. It was a wonderful moment for us when we arrived in town and the kids ran over to the car and enthusiastically greeted us, asking “How long are you staying? Are we doing drama again? What games are we going to play”? Sam, our son, was quickly accepted into the group and began playing basketball, while our daughter took on an older sister role with many of the younger kids.</p>
                     
-                    <p class="st-regular-font">The sisters were there again, but this time the elder one, after some initial hesitation, joined in and began to enjoy herself during the drama workshops. She still did not talk to us very much, but through the exercises we facilitated her attitude softened and she lost her shyness and fear and joined in. We were not sure if she would participate in the show, but she voluntarily auditioned for the part of the fly and gave a great performance - even improvising musically during one scene.</p>
+                    <p>The sisters were there again, but this time the elder one, after some initial hesitation, joined in and began to enjoy herself during the drama workshops. She still did not talk to us very much, but through the exercises we facilitated her attitude softened and she lost her shyness and fear and joined in. We were not sure if she would participate in the show, but she voluntarily auditioned for the part of the fly and gave a great performance - even improvising musically during one scene.</p>
                     
-                    <p class="st-regular-font">Her younger sister, however, watched every workshop and rehearsal with wonder and engagement, laughing and clapping at her classmates’ antics, but resolutely refused to be involved. The team offered her the chance to play instruments off-stage so she could be involved, but she covered her face or turned away.</p>
+                    <p>Her younger sister, however, watched every workshop and rehearsal with wonder and engagement, laughing and clapping at her classmates’ antics, but resolutely refused to be involved. The team offered her the chance to play instruments off-stage so she could be involved, but she covered her face or turned away.</p>
                     
-                    <p class="st-regular-font">She travelled with the kids to Mt Isa for the show and, in the most amazing last-minute turnaround, decided to dress as a butterfly and perform with the rest of her classmates in front of an audience of strangers! Without ever having actually rehearsed with the others, she fit right into the show and never missed a beat. We are all so proud of this brave girl and extremely happy that she took this momentous step in her life.</p>
+                    <p>She travelled with the kids to Mt Isa for the show and, in the most amazing last-minute turnaround, decided to dress as a butterfly and perform with the rest of her classmates in front of an audience of strangers! Without ever having actually rehearsed with the others, she fit right into the show and never missed a beat. We are all so proud of this brave girl and extremely happy that she took this momentous step in her life.</p>
                     
-                    <p class="st-regular-font">We are pleased that our program gave her the strength to do this and hope this seed will grow into a powerful tree enabling her to make positive choices in the future.</p>
+                    <p>We are pleased that our program gave her the strength to do this and hope this seed will grow into a powerful tree enabling her to make positive choices in the future.</p>
 
                     <div class="st-container-centered">
                         <iframe class="st-video-container" src="https://player.vimeo.com/video/360950714?h=aa7b28b41d&amp;app_id=122963" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" title="The Storey Players"></iframe>
@@ -318,22 +744,16 @@
 			<img src="images/charity.png" width="100" height="100" alt="Registered charity logo"/>
 
 			<div>
-				<div>The Storey Players ABN 30483370257 - also known as 'TSP Theatre Inc'</div>
+				<div>TSP Theatre Inc is a registered charity. ABN: 30483370257 – trading as The Storey Players</div>
 			</div>
 
 		</div>
 
 		<div class="st-footer-sponsor">
 			
-			<p>Vehicle maintenance kindly supplied by <a href="http://www.uptechoffroadcentre.com.au/">Uptech Offroad Centre, Monbulk Victoria</a></p>
-
-			<p>The <a href="http:/galvanisedtrailerco.com.au/">Galvanised Trailer Company</a> provides offroad trailers for our rough and tumble tours.</p>
-
-			<p>The <a href="https:/swag.com.au/">Jolly Swagman</a> has supported us with discount swags.</p>
-
+            <p>Director - Simon Storey - 0488 722 568</a></p>
+			
 			<p>Special thanks to the Sheahan Family without whose caravan our organisation would never have begun.</p>
-
-			<p>Thanks to <a href="https://www.diamantina.qld.gov.au/">Diamantina Shire Council</a></p>
 
 		</div>
 
@@ -341,6 +761,7 @@
 
 		<div class="st-footer-socials">
 
+			<a href="mailto:contact@thestoreyplayers.org"><img src="images/email.png" width="40" height="40" alt="Email logo"/></a>
 			<a href="https://www.facebook.com/thestoreyplayers"><img src="images/fb.png" width="40" height="40" alt="Facebook logo"/></a>
 			<a href="https://www.instagram.com/thestoreyplayers/"><img src="images/insta.png" width="40" height="40" alt="Instagram logo"/></a>
 			
@@ -351,9 +772,11 @@
             <img class="st-logo-animated" src="images/logo-a.gif" alt="Animated Logo"/>
 
         </div>
-		
-	</footer>
 
+	</footer>
+	
+	<link rel="stylesheet" href="index.css">
+	
 </body>
 
 </html>

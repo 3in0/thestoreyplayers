@@ -15,14 +15,14 @@
 	<meta property="og:title" content="The Storey Players">
 	<meta property="og:description"
 		content="The Storey Players is a charitable organisation whose principal mission is empowering disadvantaged kids through drama workshops and storytelling activities to strengthen their self-confidence and increase their literacy skills.">
-	<meta property="og:image" content="https://thestoreyplayers.org/images/logo.png">
+	<meta property="og:image" content="https://thestoreyplayers.org/images/logo-long.png">
 
 	<meta property="twitter:card" content="summary_large_image">
 	<meta property="twitter:url" content="https://thestoreyplayers.org">
 	<meta property="twitter:title" content="The Storey Players">
 	<meta property="twitter:description"
 		content="The Storey Players is a charitable organisation whose principal mission is empowering disadvantaged kids through drama workshops and storytelling activities to strengthen their self-confidence and increase their literacy skills.">
-	<meta property="twitter:image" content="https://thestoreyplayers.org/images/logo.png">
+	<meta property="twitter:image" content="https://thestoreyplayers.org/images/logo-long.png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,14 +31,393 @@
 
 	<link rel="icon" href="images/favicon.ico" />
 	<link rel="apple-touch-icon" sizes="180x180" href="images/favicon-180w.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16w.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32w.png">
-	<link rel="icon" type="image/png" sizes="48x48" href="/favicon-48w.png">
-	<link rel="icon" type="image/png" sizes="64x64" href="/favicon-64w.png">
-	<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192w.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16w.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32w.png">
+	<link rel="icon" type="image/png" sizes="48x48" href="images/favicon-48w.png">
+	<link rel="icon" type="image/png" sizes="64x64" href="images/favicon-64w.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="images/favicon-192w.png">
 
-	<link rel="stylesheet" href="index.css">
-	<script src="index.js" type="text/javascript"></script>
+    <script>
+
+document.addEventListener("DOMContentLoaded", function(event) { 
+
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
+
+    hamburger.addEventListener("click", mobileMenu);
+    navMenu.addEventListener("click", mobileMenuOff);
+    const navShutter = document.querySelector( ".nav-shutter" );
+
+    navShutter.addEventListener( 'touchmove', function(e){e.preventDefault()});
+    navMenu.addEventListener( 'touchmove', function(e){e.preventDefault()});
+
+    hamburger.addEventListener("click", mobileMenu);
+    navMenu.addEventListener("click", mobileMenuOff);
+
+    function mobileMenu() {
+        window.scrollTo( 0, 0 );
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+        navShutter.classList.toggle( "active" );
+
+    }
+
+    function mobileMenuOff() {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+        navShutter.classList.remove( "active" );
+
+    }
+
+});
+
+    </script>
+
+    <style>
+@font-face {font-family: "Linotype Feltpen W02 Medium";
+    src: url("special.woff2");
+    font-display: swap;  
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Source Sans Pro', sans-serif;
+
+}
+
+header.st-header-about {
+    background-color: #ff6c2c;
+}
+
+body {
+    min-width: 300px;
+}
+
+.st-banner {
+    margin: 20px;
+}
+
+.st-logo {
+    margin-left: 1.2rem;
+    margin-bottom: 1.5rem;
+    margin-top: 0.7rem;
+    width: 90%;
+    max-width: 1500px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 0.5rem;
+    padding-left: 0rem;
+    padding-right: 2rem;
+    padding-bottom: 0px;
+}
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 20;
+}
+
+.nav-item {
+    margin-left: 5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.nav-link{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #fff;
+}
+
+.nav-link:hover{
+    color: #fff;
+}
+
+.nav-logo {
+    font-size: 2.1rem;
+    font-weight: 500;
+    width: 40%;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+.st-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+}
+
+.st-special-font {
+    font-family: 'Linotype Feltpen W02 Medium', "Arial", "Tahoma";
+}
+
+.st-container-centered {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.band2 {
+  position: relative;
+  display: block;
+  margin: 40px;
+  background: white;
+  border-top: 2px solid grey;
+  border-left: 2px solid grey;
+}
+
+.band3 {
+  position: relative;
+  display: inherit;
+  margin: 10px;
+  height: 100%;
+}
+
+.st-relative {
+    position: relative;
+}
+
+.st-line {
+    clear: both;
+    margin-top: 0px;
+}
+
+
+.st-spacer {
+    clear: both;
+    height: 2rem;
+}
+
+.st-full-width {
+    width: 100%;
+    height: auto;
+    z-index: 10;
+}
+
+.st-responsive-panel {
+    padding: 3rem;
+    font-size: 1.6rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.st-inner-text {
+    background-color: white;
+    color: black;
+    padding: 2rem;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.st-align-center {
+    text-align: center;
+}
+
+.st-bg-navy {
+    background-color: #2a79c4;
+}
+
+.st-bg-orange {
+    background-color: #ff6c2c;
+}
+
+.st-navy-font {
+    color: #01202e;
+}
+
+.st-orange-font {
+    color: #ff6c2c;
+}
+
+.st-max-1200 {
+    max-width: 1200px;
+}
+
+@media only screen and (min-width: 601px) {
+
+	.nav-item {
+		margin-left: 2rem;
+	}
+
+}
+
+@media only screen and (max-width: 768px) {
+	
+
+	.navbar {
+        padding-right: 1rem;
+		z-index: 2;
+    }
+
+	.nav-shutter {
+		display: none;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 100%;
+		bottom: 100%;
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+		z-index: 1;
+
+		background-color: rgba( 50, 50, 50, 0.5 );
+
+	}
+
+	.nav-shutter.active {
+		display: block;
+
+	}
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+		top: 40px;
+
+        flex-direction: column;
+        background-color: #ff6c2c;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        padding-inline-start: 0px;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+        margin-top: 0.2rem;
+        padding: 0px;
+
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+    }
+
+    .nav-link {
+        margin: 2.5rem 0;
+        margin: 0;
+        padding: 2rem 0;
+        display: block;
+    }
+
+    .nav-link{
+        color: #fff;
+        width: 100%;
+        height: 100%;
+        font-size: 1.5rem;
+    }
+    
+    .hamburger {
+        display: block;
+        cursor: pointer;
+		z-index: 4;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+   
+    .st-spacer {
+        height: 1rem;
+    }
+
+    .st-video-caption {
+        padding: 1rem;
+        font-size: 0.8rem;
+    }
+
+    .st-inner-text {
+        padding: 1rem;    
+    }
+
+    .st-responsive-panel {
+        padding: 0.2rem;
+        font-size: 1rem;
+    }
+    
+    .st-responsive-panel .band2 {
+        width: 100vw;
+        margin: 0px;
+    }
+
+    .st-caption {
+        font-size: 1rem;
+    }
+    
+    .st-title {
+        font-size: 1.2rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .st-quote-caption {
+        font-size: 1.2rem;
+    }
+
+    .st-quote-sub-caption {
+        font-size: 1.1rem;
+    }
+    
+    .st-quote-sub-caption-orange {
+        font-size: 1.1rem;
+    }
+    
+
+ 
+}
+        
+    </style>
 
 	<title>About | The Storey Players</title>
 
@@ -50,6 +429,8 @@
 
 		<div class="st-header-banner">
 
+            <div class="nav-shutter"></div>
+
             <nav id="st-nav" class="navbar st-nojs">
                 
                 <div></div>
@@ -57,6 +438,9 @@
 				<ul class="nav-menu">
 					<li class="nav-item">
 						<a href="index.html" class="nav-link">Home</a>
+					</li>
+                    <li class="nav-item">
+						<a href="index.html#tour" class="nav-link">2022 Tour</a>
 					</li>
 					<li class="nav-item">
 						<a href="productions.html" class="nav-link">Productions</a>
@@ -89,26 +473,54 @@
 
 				<div class="st-container-centered">
 
-					<div class="st-inner-text st-regular-font st-caption">
+					<div class="st-inner-text st-caption">
 
-                        <p class="st-special-font st-title">About Us..</p>
+                        <h1 class="st-special-font st-title">About Us..</h1>
 
-                        <p class="st-regular-font">Our organisation is a close-knit group and each member has an important role to play in our projects. </p>
+                        <p>
+                            We began this organisation after our first tour in 2017 when we realised that many remote and outback schools never 
+                            have the opportunity to participate in drama and storytelling workshops and boost their self-confidence while learning 
+                            to tell their own stories.
+                        </p>
 
-                        <p class="st-regular-font">Simon and Tina are the Artistic and Creative Directors - their job is to listen to and record the stories, write a script and then work with the children to bring their stories to life on the stage.</p>
+                        <p>
+                            Since then we have forged strong relationships with Indigenous leaders such as Don Rowlands, OAM and Elder of the 
+                            Wangkangurru people in the Simpson Desert, and Trevina Rogers, a Pitta Pitta artist in Dajarra and have learned to 
+                            listen to community and work alongside them to tell stories together as well as many other people in outback Australia.
+                        </p>
 
-                        <p class="st-regular-font">Amelie and Sam join in the workshops, establish friendships with the children and become a link between their parents as teachers and the kids as learners. </p>
+                        <p>                            
+                            Simon and Tina are the Artistic and Creative Directors - their job is to listen to and record the stories, write 
+                            the script in collaboration with the children and then work together to bring their stories to life on the stage 
+                            or film.
+                        </p>
 
+                        <p>
+                            Our fourteen-year-old son Sam also accompanies us and brings his musical and film-making skills into the work as 
+                            well as joining in the workshops and forging friendships with the other young people in the communities.
+                        </p>
+
+                        <p>
+                            Amelie is leaving us this year to study at Deakin University, so her ideas and humour will be sorely missed! 
+                            Amelie played the role of a bored history student in The Ghost of John King which is the first show we wrote 
+                            and toured in 2017 and often helped out in the workshops.
+                        </p>
 
                     </div>
 
+                    <!-- was group3 -->
+
                     <picture>
-                        <source media="(max-width: 400px)" srcset="images/group3-300w.jpg">
-                        <source media="(max-width: 600px)" srcset="images/group3-600w.jpg">
-                        <source media="(max-width: 900px)" srcset="images/group3-900w.jpg">
-                        <img class="st-full-width" src="images/group3-1200w.jpg" width="900" height="506" alt="The team at the Storey Players"/>
+                        <source media="(max-width: 400px)" srcset="images/family-300w.jpg">
+                        <source media="(max-width: 600px)" srcset="images/family-600w.jpg">
+                        <source media="(max-width: 900px)" srcset="images/family-900w.jpg">
+                        <img class="st-full-width" src="images/family-1200w.jpg" width="900" height="506" alt="The family behind the Storey Players"/>
                     </picture>
+					<div class="st-inner-text st-caption">
 	
+                        <p>This photo shows our family when we began the organisation in 2017. Charlie the Wander Dog still comes on tour as our official mascot and has always got our backs…</p>
+                    </div>
+
 				</div>
 			</div>
 		</div>
@@ -128,9 +540,9 @@
                 </picture>
 
 
-					<div class="st-inner-text st-regular-font st-caption">
+					<div class="st-inner-text st-caption">
 
-                        <p class="st-special-font st-title">Our Board..</p>
+                        <h1 class="st-special-font st-title">Our Board..</h1>
 
                         <div class="st-board-member">
 
@@ -141,7 +553,7 @@
                             </div>
 
                             <div class="st-board-bio">
-                                <p class="st-board-member-title">Simon Storey - President</p> 
+                                <h2 class="st-orange-font">Simon Storey - President</h2> 
                                 <p>Simon has been making theatre for 30 years. His love of theatre began in Sydney where he studied with NIDA. He then moved to London and studied Expressive Mime with Adam Darius and Theatre Performance at the London Academy Drama School. After living and performing in London for three years, Simon returned to Australia where he became a founding member of the Chapel of Change theatre company based in Melbourne with Rainsford. He then moved to Germany and founded Footslog English Language Theatre which toured various shows throughout Europe for many years until he relocated to Australia. Simon and Tina founded The Storey Players (TSP Theatre Inc) when they realized there was a great need for drama activities in remote communities of Australia. </p>
                             </div>
 
@@ -159,8 +571,8 @@
                             </div>
 
                             <div class="st-board-bio">
-                                <p class="st-board-member-title">Tina Storey - Vice President</p> 
-                                <p>Tina studied piano and ballet and began performing at age 10 in Germany at the Oldenburg Theatre working with such notable directors as Hans Haeckermann and Peter Grisebach. She then worked in photography and specialised in portrait and theatre photography in black and white before moving to Hamburg to study   Sociology and Art History at University of Hamburg. She worked with Simon at Footslog English Language Theatre on script development, costume design and music as well as being the official photographer. Tina is the Creative Director of The Storey Players and creates costumes and props for the show, is the official photographer, principle script advisor and sound operator.</p>
+                                <h2 class="st-orange-font">Tina Storey - Vice President</h2> 
+                                <p>Tina studied piano and ballet and began performing at age 10 in Germany at the Oldenburg Theatre and through her experience realised the important role drama plays in strengthening self-confidence and resilience. She brings this experience - in addition to her skills as a piano and German-language teacher - to The Storey Players and loves working with the children in the workshops, designing the costumes for the productions and creating the scripts together.</p>
                             </div>
 
                         </div>
@@ -177,7 +589,7 @@
                             </div>
 
                             <div class="st-board-bio">
-                                <p class="st-board-member-title">Don Rowlands OAM</p> 
+                                <h2 class="st-orange-font">Don Rowlands OAM</h2> 
                                 <p>Don Rowlands OAM, is a leader and respected Elder of the Wangkangurru people and Head Ranger of Munga-Thirri National Park (Simpson Desert). He was born in Munga-Thirri where he learnt the beliefs, traditions and cultures of the Wangkangurru from his Elders. He also learnt how to track, hunt and find bush tucker. His grandmother taught him how to understand the Dreamtime and how these narratives spiritually bonded the Wangkangurru people to the Munga-Thirri.</p>
                                 <p>Don is a strong proponent of “the ways of the old people”, with a sincere belief that all Australians can benefit enormously from developing an understanding of their country by appreciating the culture and beliefs that sustained the Indigenous people of Australia for thousands of years. He believes that one practical way to do this is by sharing the knowledge of survival and the benefits of coexisting with the land. Don hopes that by promoting attention to the positive aspects of respecting and nurturing the ancient cultures of his people, a deeper understanding can be developed between all Australians.</p>
                             </div>
@@ -196,7 +608,7 @@
                             </div>
 
                             <div class="st-board-bio">
-                                <p class="st-board-member-title">Peta Rowlands</p> 
+                                <h2 class="st-orange-font">Peta Rowlands</h2> 
                                 <p>Peta Rowlands is an up and coming Elder and proud Aboriginal woman of the Wangkangurru/Yarluyandi people from the Munga-Thirri (Simpson Desert) Country.</p>
                                 <p>After spending most of her early life travelling around Australia, Peta didn’t feel the call of her Ancestors or return to culture until her late 30’s. She is now living in the Northern Suburbs of Brisbane and works in her community with local Aboriginal Elders. She also works alongside her father Don within the family organisation ‘Watti Watti Custodial Services Pty Ltd’ whose main emphasis is to ‘Strengthen cultural identity and to educate and share knowledge of traditional stories, culture and language in a way that is respectful, factual and educational.’</p>
                             </div>
@@ -215,7 +627,7 @@
                             </div>
 
                             <div class="st-board-bio">
-                                <p class="st-board-member-title">Trevina Rowlands</p> 
+                                <h2 class="st-orange-font">Trevina Rowlands</h2> 
                                 <p>Trevina lives in a small country town call Dajarra that is situated 155 km south of Mt Isa which, at one stage was one of the largest cattle droving centres in the world. Trevina is a proud Pitta Pitta/ Wangka-madlha woman and a mother of five boys and one girl. With her husband, Gary, they manage a small hobby farm with goats, horses and cows. Since she was young, Trevina has worked on stations in remote areas within Outback North West Qld and is full of stories about the excitement of that era. She especially loves doing activities with the children at Dajarra and Boulia State School. Trevina is an Artist and loves to sew, take photos and cook - catering for large groups is her speciality. She also loves going out on Country, collecting bush medicine/food and teaching cultural awareness.</p>
                             </div>
 
@@ -235,7 +647,7 @@
                             -->
 
                             <div class="st-board-bio">
-                                <p class="st-board-member-title">Tina Cavanough</p> 
+                                <h2 class="st-orange-font">Tina Cavanough</h2> 
                                 <p>Tina holds a Bachelor of Arts in literature and Politics and a Post-Graduate Librarianship qualification and has worked as a librarian for over 20 years.  Her career in public libraries includes a stint as a Children's and Youth Services Librarian at the Alice Springs Public Library. She has served on many boards including those of The Children's Book Council of Australia, Disability Services of Central Australia and The AIDS Council of Central Australia. Tina brings a wealth of knowledge about the Australian publishing industry and children's literature, as well as her experience living in Alice Springs, to the board.</p>
                             </div>
 
@@ -255,7 +667,7 @@
                             -->
 
                             <div class="st-board-bio">
-                                <p class="st-board-member-title">Simon Denham - Treasurer</p> 
+                                <h2 class="st-orange-font">Simon Denham - Treasurer</h2> 
                                 <p>Simon grew up in Mornington and has an Advanced Diploma of Financial Services (Financial Planning). He has a wide range of experience in the Finance industry and has been self employed as a Paraplanner for the past 12 years. He has a passion for financial education and having worked at Uluru for over 3 years previously, has a keen interest and respect for Indigenous culture. He also has a love of children, having two of his own,  and is keen to see that every child is given the opportunity to bloom and grow through positive experiences.</p>
                             </div>
 
@@ -273,7 +685,7 @@
                             </div>
 
                             <div class="st-board-bio">
-                                <p class="st-board-member-title">Suzanne Downie - Secretary</p> 
+                                <h2 class="st-orange-font">Suzanne Downie - Secretary</h2> 
                                 <p>Suzanne grew up in the foothills of the Dandenong Ranges South East of Melbourne and studied Fine Art at Monash University and Art Therapy at Phoenix Institute in Prahran. She has worked in the field of Community Services and Development for the last 19 years for Not-for Profit organisations and is passionate about helping communities thrive, particularly through Arts, Theatre and Health & Wellbeing.</p>
                             </div>
 
@@ -292,22 +704,16 @@
 			<img src="images/charity.png" width="100" height="100" alt="Registered charity logo"/>
 
 			<div>
-				<div>The Storey Players ABN 30483370257 - also known as 'TSP Theatre Inc'</div>
+				<div>TSP Theatre Inc is a registered charity. ABN: 30483370257 – trading as The Storey Players</div>
 			</div>
 
 		</div>
 
 		<div class="st-footer-sponsor">
 			
-			<p>Vehicle maintenance kindly supplied by <a href="http://www.uptechoffroadcentre.com.au/">Uptech Offroad Centre, Monbulk Victoria</a></p>
-
-			<p>The <a href="http:/galvanisedtrailerco.com.au/">Galvanised Trailer Company</a> provides offroad trailers for our rough and tumble tours.</p>
-
-			<p>The <a href="https:/swag.com.au/">Jolly Swagman</a> has supported us with discount swags.</p>
-
+            <p>Director - Simon Storey - 0488 722 568</a></p>
+			
 			<p>Special thanks to the Sheahan Family without whose caravan our organisation would never have begun.</p>
-
-			<p>Thanks to <a href="https://www.diamantina.qld.gov.au/">Diamantina Shire Council</a></p>
 
 		</div>
 
@@ -315,6 +721,7 @@
 
 		<div class="st-footer-socials">
 
+			<a href="mailto:contact@thestoreyplayers.org"><img src="images/email.png" width="40" height="40" alt="Email logo"/></a>
 			<a href="https://www.facebook.com/thestoreyplayers"><img src="images/fb.png" width="40" height="40" alt="Facebook logo"/></a>
 			<a href="https://www.instagram.com/thestoreyplayers/"><img src="images/insta.png" width="40" height="40" alt="Instagram logo"/></a>
 			
@@ -327,6 +734,42 @@
         </div>
 
 	</footer>
+
+    <style>
+
+
+.st-board-member {
+    width: 100%;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.st-board-photo {
+    width: 20%;
+    margin-right: 5%;
+    float: left;
+    margin-right: 1.5rem;
+    margin-bottom: 0.25rem;
+}
+
+.st-board-photo img {
+    width: 100%;
+    height: auto;
+}
+
+.st-board-bio h2 {
+    display: inherit;
+    font-size: inherit;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: inherit;
+}
+
+    </style>
+
+    <link rel="stylesheet" href="index.css">
 
 </body>
 
