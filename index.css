@@ -104,15 +104,6 @@ footer div.st-logo-container {
     font-size: 1rem;
 }
 
-.st-quote-caption, .st-bullet {
-    font-size: 2rem;
-    color: #ff6c2c;
-}
-
-.st-quote-caption {
-    margin-bottom: 0.5rem;
-}
-
 .st-quote-sub-caption {
     font-size: 1.6rem;
     color: #01202e;
@@ -143,11 +134,5 @@ ul.st-bullet li:before {
     footer {
         font-size: 0.8rem;
     }
-
-    ul.st-bullet {
-        margin-left: 0px;
-        padding: 0px;
-    }
- 
   
 }

@@ -1,0 +1,44 @@
+
+.st-quote-caption, .st-bullet {
+    font-size: 2rem;
+    color: #ff6c2c;
+}
+
+.st-quote-caption {
+    margin-bottom: 0.5rem;
+}
+
+.st-video-container {
+
+    display: none;
+
+}
+
+.hamburger {
+    display: none;
+}
+
+.nav-menu {
+
+    position: static;
+    left: auto;
+    top: auto;
+    width: auto;
+    flex-direction: row;
+    background-color: transparent;
+    box-shadow: none;
+
+}
+
+.nav-item {
+
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+}
+
+.nav-link {
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+}
