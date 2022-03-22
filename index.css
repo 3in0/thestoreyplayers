@@ -11,6 +11,13 @@ video {
     background-size: cover;
 }
 
+.st-hosted-video {
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    z-index: 10;
+}
+
 footer {
     background-color: #001223;
     color: white;
