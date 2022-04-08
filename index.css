@@ -18,6 +18,12 @@ video {
     z-index: 10;
 }
 
+.st-hosted-video > iframe {
+    aspect-ratio: 16/9;
+    width: 100%;
+    height: auto;
+}
+
 footer {
     background-color: #001223;
     color: white;
