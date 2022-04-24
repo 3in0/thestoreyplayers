@@ -333,6 +333,18 @@ a {
 	display: none;
 }
 
+.st-responsive-frame {
+
+	width: 100%;
+	display: grid;
+	
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr;
+	grid-row-gap: 10px;
+	grid-column-gap: 10px;
+
+}
+
 .band2 {
   position: relative;
   display: block;
@@ -436,6 +448,13 @@ a {
 
 
 @media only screen and (max-width: 600px) {
+
+	.st-responsive-frame {
+
+		grid-template-columns: 1fr;
+		grid-row-gap: 10px;
+
+		}
 
 	header.st-header-home {    
 		background-image: url("images/background-small.jpg");    
@@ -721,6 +740,13 @@ a {
     width: 100%;
     height: auto;
     vertical-align: middle;
+}
+
+.st-quote-container-left {
+    padding-left: 2rem;
+    border-left-style: solid;
+    border-left-width: 0.5rem;
+    border-left-color: #ff6c2c;
 }
 
 .st-footer-sponsors {    
@@ -1963,9 +1989,10 @@ a {
 					</picture>
 
 					<a href="#tour-as"><div class="st-cover st-cover-as" title="Alice Springs"></div></a>
+					<a href="#tour-dj"><div class="st-cover st-cover-dj" title="Dajarra"></div></a>
+
 					<!--
 					<a href="#tour-bv"><div class="st-cover st-cover-bv" title="Birdsville"></div></a>
-					<a href="#tour-dj"><div class="st-cover st-cover-dj" title="Dajarra"></div></a>
 					<a href="#tour-bt"><div class="st-cover st-cover-bt" title="Burketown"></div></a>
 					<a href="#tour-wt"><div class="st-cover st-cover-wt" title="Winton"></div></a>
 					<a href="#tour-bw"><div class="st-cover st-cover-bw" title="Bowen"></div></a>
@@ -2018,9 +2045,82 @@ a {
 					</form>
 	
 				</div>
+				
+                <div id="tour-dj" class="st-inner-text st-max-1200">
 
+                    <p class="st-quote-sub-caption-orange st-special-font">Dajarra</p>
+
+					<p>
+						The workshops went very well this week with an average attendance of 16+ kids. We played a variety of self-confidence boosting games and began reading and creating the story for the production of <em>How the Birds got their Colours</em> which will be performed next Thursday in the community. The kids really enjoyed making their masks for the different birds and loved the first day of filming!
+					</p>
+					
+					<br/>
+
+					<div class="st-responsive-frame">
+
+						<picture>
+							<source media="(max-width: 400px)" srcset="images/group-dj-1-300w.jpg">
+							<source media="(max-width: 900px)" srcset="images/group-dj-1-600w.jpg">
+							<img class="st-full-width" src="images/group-dj-1-600w.jpg" width="600" height="800" alt="Having fun in Dajarra!"/>
+						</picture>
+
+						<picture>
+							<source media="(max-width: 400px)" srcset="images/group-dj-2-300w.jpg">
+							<source media="(max-width: 900px)" srcset="images/group-dj-2-600w.jpg">
+							<img class="st-full-width" src="images/group-dj-2-600w.jpg" width="600" height="450" alt="Having fun in Dajarra!"/>
+						</picture>
+
+					</div>
+
+					<br/>
+
+					<form action="https://www.paypal.com/donate" method="post" target="_top">
+						<input type="hidden" name="hosted_button_id" value="QFCBM5EBESUME" />
+						<input type="image" src="https://www.paypalobjects.com/en_AU/i/btn/btn_donate_LG.gif" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+						<img alt="" src="https://www.paypal.com/en_AU/i/scr/pixel.gif" width="1" height="1" />
+					</form>
+	
+				</div>
+                
+				<div class="st-inner-text st-max-1200">
+
+                    <p class="st-quote-sub-caption-orange st-special-font">Cloncurry</p>
+
+					<p>
+						We arrived in Cloncurry and performed The Forgotten Warrior at Cloncurry State School and St Joseph's School. The students at both schools loved the show and offered lots of feedback afterwards including: 
+
+					</p>
+
+					<div class="st-quote-container st-quote-container-left st-special-font">
+
+						❝This was a very powerful production that addressed many truths about the history of Australia's first Peoples. Thank you so much for bringing this to us!
+
+						The intro at the beginning was good to set the theme and make the story more understandable.
+
+						It made me think more deeply about people who went to war.❞ 
+
+					</div>
+
+					<p>
+						The original performance space at St Joseph's was far too bright for the film, but fortunately the local church came to the rescue and offered their space for the show. Have a look at one of the most original performance spaces for our show, yet! 
+					</p>
+					
+					<br/>
+
+				</div>
+
+				<div class="st-relative">
+					<picture>
+						<source media="(max-width: 400px)" srcset="images/tour-cc-300w.jpg">
+						<source media="(max-width: 600px)" srcset="images/tour-cc-600w.jpg">
+						<source media="(max-width: 900px)" srcset="images/tour-cc-900w.jpg">
+						<img class="st-full-width" src="images/tour-cc-1200w.jpg" width="1200" height="930" alt="A map of the upcoming Storey Players tour 2022"/>
+					</picture>
+
+				</div>
 
 			</div>
+
 		</div>
         
 	</section>
